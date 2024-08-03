@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Fruits</title>
+</head>
+
+<body>
+    <section>
+        <div class="bg"></div>
+        <header>
+            <a href="#" class="logo">Fruis Webstore</a>
+            <label class="hamburger" id="tog">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+            <ul class="navigation" id="nag">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>Eat fresh Everyday</h2>
+                <p id="description"> Apples are a timeless favorite, loved for their crisp texture and sweet-tart
+                    flavor. Whether you
+                    enjoy them fresh, baked into a pie, or added to salads, apples are as versatile as they are
+                    delicious. Packed with vitamins and fiber, they’re a great choice for a healthy snack. With so many
+                    varieties to choose from, there’s an apple to suit every taste.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="imageBox animate__animated ">
+                <img src="img/apple.png" class="fruits" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li data-text="Apple" class="active"><img src="img/apple.png"
+                    onclick="imgSlider('img/apple.png'); changeBgcolor('#fc4155')" alt=""></li>
+            <li data-text="Mango"><img src="img/mango.png"
+                    onclick="imgSlider('img/mango.png'); changeBgcolor('#ffcc02')" alt=""></li>
+            <li data-text="water melon"><img src="img/watermelon.png"
+                    onclick="imgSlider('img/watermelon.png'); changeBgcolor('#92ba3c')" alt=""></li>
+            <li data-text="dragon Fruits"><img src="img/dragonFruits.png"
+                    onclick="imgSlider('img/dragonFruits.png');changeBgcolor('#fb6cb2')" alt=""></li>
+            <li data-text="Pine Apple"><img src="img/pineApple.png"
+                    onclick="imgSlider('img/pineApple.png'); changeBgcolor('#ffb42b')" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
